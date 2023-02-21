@@ -3,12 +3,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-samples/config-repo
+          uri: https://git@github.com:ericksonAssis/config-repo.git
           repos:
-            simple: https://github.com/simple/config-repo
+            simple: https://git@github.com:ericksonAssis/config-repo.git
             special:
               pattern: special*/dev*,*special*/dev*
-              uri: https://github.com/special/config-repo
+              uri: https://git@github.com:ericksonAssis/config-repo.git
             local:
               pattern: local*
-              uri: file:/home/configsvc/config-repo
+              uri: file:/home/erickson/dev/config-repo
