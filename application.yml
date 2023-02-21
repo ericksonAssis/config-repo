@@ -5,9 +5,13 @@ spring:
         git:
           uri: https://git@github.com:ericksonAssis/config-repo.git
           repos:
-            simple: https://git@github.com:ericksonAssis/config-repo.git
-            special:
-              pattern: special*/dev*,*special*/dev*
+            development:
+              pattern:
+                - '*/development'
+              uri: git@github.com:ericksonAssis/config-repo-development.git
+            staging:
+              pattern:
+                - '*/production'
               uri: https://git@github.com:ericksonAssis/config-repo.git
             local:
               pattern: local*
