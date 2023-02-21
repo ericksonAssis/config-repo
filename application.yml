@@ -1,3 +1,6 @@
+limits-service:
+  minimum: 5
+  maximum: 95
 spring:
   cloud:
     config:
@@ -16,5 +19,5 @@ spring:
               uri: https://git@github.com:ericksonAssis/config-repo-production.git
               force-pull: true
             local:
-              pattern: local*
-              uri: file:/home/erickson/dev/config-repo
+              pattern: '*/local'
+              uri: file:/home/erickson/dev/config-repo-local
